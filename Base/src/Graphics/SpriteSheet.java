@@ -13,11 +13,7 @@ public class SpriteSheet {
 	private Sprite[] Sprites;
 	
 	//public static SpriteSheet Background = new SpriteSheet("/Textures/Background1.png",/*width*/,/*height*/);
-
-
-
-	
-	
+	public static SpriteSheet Background = new SpriteSheet("/Textures/Background.png",720,405);	
 	
 
 	public Sprite[] getSprite(){

@@ -5,8 +5,8 @@ import java.util.Random;
 public class Screen {
 	
 	// setup location handling variables
-	public static int width;
-	public static int height;
+	public int width;
+	public  int height;
 	public int xOffset;
 	public int yOffset;
 	public static int i=0;
@@ -18,8 +18,8 @@ public class Screen {
 	public boolean Debug = false;
 	
 	public Screen(int width, int height) {
-		Screen.width = width;
-		Screen.height = height;
+		this.width = width;
+		this.height = height;
 		pixels = new int[width * height];
 
 		for (int i = 0; i < MAP_SIZE * MAP_SIZE; i++) {
@@ -30,7 +30,7 @@ public class Screen {
 	// clear the screen to black
 	public void clear() {
 		for (int i = 0; i < pixels.length; i++) {
-			pixels[i] = 0x000000;
+			pixels[i] = 0x666;
 		}
 	}
 	

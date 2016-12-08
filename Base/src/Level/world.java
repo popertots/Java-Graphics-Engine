@@ -3,12 +3,12 @@ package Level;
 import java.util.Random;
 
 import Graphics.Screen;
-import Graphics.Sprite;
+import Graphics.SpriteSheet;
 
 public class world {
 	
 	public int width, height, num=0;
-	private Screen Screen;
+	private Screen screen;
 	protected Random rnd = new Random();
 	public int color = 0x000000;
 
@@ -16,7 +16,7 @@ public class world {
 	public world(int width, int height, Screen screen){
 		this.width=width;
 		this.height=height;
-		this.Screen = screen;
+		this.screen=screen;
 	}
 	
 	public void update(){
@@ -27,5 +27,6 @@ public class world {
 	
 	public void render(){
 		//lists
+		screen.renderSheet(0, 0, SpriteSheet.Background, false);
 	}
 }
