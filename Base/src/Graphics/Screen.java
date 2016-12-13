@@ -93,7 +93,7 @@ public class Screen {
 				if(xa < 0){
 					xa=0;
 				}
-				int pColor = sprite.pixels[xs + ys * sprite.SIZE];
+				int pColor = sprite.pixels[xs + ys * sprite.width];
 				if (pColor != 0xffff00ff){
 					pixels[xa + ya * width] = pColor;
 				}

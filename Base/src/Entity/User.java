@@ -2,6 +2,7 @@ package Entity;
 
 import Graphics.Screen;
 import Graphics.Sprite;
+import Graphics.SpriteSheet;
 import Input.Keyboard;
 
 public class User {
@@ -39,6 +40,6 @@ public class User {
 	}
 	
 	public void render(){
-		Screen.renderMob(x, y, sprite, 0);
+		Screen.renderSheet(x, y, SpriteSheet.consolas16, false);
 	}
 }

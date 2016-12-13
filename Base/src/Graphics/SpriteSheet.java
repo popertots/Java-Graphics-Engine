@@ -15,6 +15,8 @@ public class SpriteSheet {
 	//public static SpriteSheet Background = new SpriteSheet("/Textures/Background1.png",/*width*/,/*height*/);
 	public static SpriteSheet Background = new SpriteSheet("/Textures/Background.png",720,405);	
 	
+	public static SpriteSheet consolas16 = new SpriteSheet("/Fonts/consolas16.png",256,96);
+	
 
 	public Sprite[] getSprite(){
 		return Sprites;	

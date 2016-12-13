@@ -8,7 +8,7 @@ public class GuiObject {
 
 	protected Screen screen;
 	protected int width, height, x, y;
-	protected int color = 0x000000;
+	protected int color = 0x333333;
 	protected Keyboard key;
 	protected Mouse mouse;
 	
@@ -19,12 +19,8 @@ public class GuiObject {
 		this.y=y;
 	}
 	
-	protected GuiObject(int x, int y, int width, int height, int color){
-		this.width=width;
-		this.height=height;
-		this.color=color;
-		this.x=x;
-		this.y=y;
+	protected GuiObject(){
+		
 	}
 	
 	public void init(Screen screen, Keyboard key, Mouse mouse){
